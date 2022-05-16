@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@peeky/test": "^0.13.5",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.33",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "start": "node --loader ts-node/esm --es-module-specifier-resolution=node index.ts",
+    "dev": "nodemon --exec \"npm run start\" -e ts",
+    "lint": "eslint . --ignore-pattern node_modules/",
+    "format": "prettier --ignore-unknown --write '{,!(node_modules)/**/}*'",
+    "test": "peeky run",
+    "test:open": "peeky open"
+  }
+}
