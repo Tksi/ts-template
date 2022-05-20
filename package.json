@@ -18,6 +18,7 @@
     "lint": "eslint . --ignore-pattern node_modules/",
     "format": "prettier --ignore-unknown --write '{,!(node_modules)/**/}*'",
     "test": "peeky run",
-    "test:open": "peeky open"
+    "test:open": "peeky open",
+    "type": "tsc --noEmit"
   }
 }
