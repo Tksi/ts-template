@@ -9,6 +9,7 @@
     "eslint": "^8.15.0",
     "nodemon": "^2.0.16",
     "prettier": "^2.6.2",
+    "simple-git-hooks": "^2.7.0",
     "typescript": "^4.6.4",
     "vite-node": "^0.12.7"
   },
@@ -19,6 +20,13 @@
     "format": "prettier --ignore-unknown --write '{,!(node_modules)/**/}*'",
     "test": "peeky run",
     "test:open": "peeky open",
-    "type": "tsc --noEmit"
+    "type": "tsc --noEmit",
+    "postinstall": "npx simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "npm run format"
   }
 }
