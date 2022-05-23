@@ -1,5 +1,1 @@
-Hello
-
-Hello
-
-tset
+"こんにちは"
