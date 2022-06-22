@@ -1,8 +1,6 @@
 {
   "type": "module",
   "devDependencies": {
-    "@peeky/test": "^0.13.5",
-    "@types/jest": "^28.1.3",
     "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
