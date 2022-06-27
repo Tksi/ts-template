@@ -11,11 +11,19 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    'padding-line-between-statements': [
+      'warn',
+      { blankLine: 'always', prev: '*', next: 'block-like' },
+      { blankLine: 'always', prev: 'block-like', next: '*' },
+    ],
+    '@typescript-eslint/padding-line-between-statements': [
+      'warn',
+      { blankLine: 'always', prev: '*', next: 'type' },
+      { blankLine: 'always', prev: 'type', next: '*' },
+    ],
     'no-console': [
       'warn',
-      {
-        allow: ['time', 'timeEnd', 'info', 'error', 'debug'],
-      },
+      { allow: ['time', 'timeEnd', 'info', 'error', 'debug'] },
     ],
   },
 };
