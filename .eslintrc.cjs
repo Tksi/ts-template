@@ -13,7 +13,11 @@ module.exports = {
   rules: {
     'padding-line-between-statements': [
       'warn',
-      { blankLine: 'always', prev: '*', next: 'block-like' },
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: ['block-like', 'return', 'throw'],
+      },
       { blankLine: 'always', prev: 'block-like', next: '*' },
     ],
     '@typescript-eslint/padding-line-between-statements': [
