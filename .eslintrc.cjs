@@ -25,6 +25,10 @@ module.exports = {
       { blankLine: 'always', prev: '*', next: 'type' },
       { blankLine: 'always', prev: 'type', next: '*' },
     ],
+    '@typescript-eslint/naming-convention': [
+      'warn',
+      { selector: 'typeLike', format: ['PascalCase'] },
+    ],
     'no-console': [
       'warn',
       { allow: ['time', 'timeEnd', 'info', 'error', 'debug'] },
