@@ -16,7 +16,7 @@ module.exports = {
       {
         blankLine: 'always',
         prev: '*',
-        next: ['block-like', 'return', 'throw'],
+        next: ['block-like', 'return', 'throw', 'export'],
       },
       { blankLine: 'always', prev: 'block-like', next: '*' },
     ],
