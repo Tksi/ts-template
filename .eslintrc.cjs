@@ -13,6 +13,10 @@ module.exports = {
   rules: {
     camelcase: 'warn',
     eqeqeq: 'warn',
+    'max-params': 'warn',
+    'max-depth': 'warn',
+    'prefer-destructuring': 'warn',
+    curly: ['warn', 'multi-line'],
     'padding-line-between-statements': [
       'warn',
       {
@@ -51,7 +55,6 @@ module.exports = {
     ],
     'import/newline-after-import': 'warn',
     'import/no-duplicates': 'warn',
-    'prefer-destructuring': 'warn',
     'no-console': [
       'warn',
       { allow: ['time', 'timeEnd', 'info', 'error', 'debug'] },
