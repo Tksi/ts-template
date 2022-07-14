@@ -11,6 +11,8 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'import'],
   rules: {
+    camelcase: 'warn',
+    eqeqeq: 'warn',
     'padding-line-between-statements': [
       'warn',
       {
