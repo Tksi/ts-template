@@ -50,6 +50,7 @@ module.exports = {
       },
     ],
     'import/newline-after-import': 'warn',
+    'import/no-duplicates': 'warn',
     'prefer-destructuring': 'warn',
     'no-console': [
       'warn',
