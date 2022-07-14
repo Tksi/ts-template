@@ -1,5 +1,5 @@
 export const main = () => {
-  console.log('hello');
+  console.debug('hello');
 
   return true;
 };
