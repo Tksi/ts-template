@@ -16,6 +16,9 @@ module.exports = {
     'max-params': 'warn',
     'max-depth': 'warn',
     'prefer-destructuring': 'warn',
+    'array-callback-return': 'warn',
+    'no-return-await': 'warn',
+    'require-atomic-updates': 'warn',
     curly: ['warn', 'multi-line'],
     'padding-line-between-statements': [
       'warn',
