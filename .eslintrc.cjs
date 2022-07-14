@@ -29,6 +29,7 @@ module.exports = {
       'warn',
       { selector: 'typeLike', format: ['PascalCase'] },
     ],
+    'prefer-destructuring': 'warn',
     'no-console': [
       'warn',
       { allow: ['time', 'timeEnd', 'info', 'error', 'debug'] },
