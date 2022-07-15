@@ -21,6 +21,10 @@ module.exports = {
     'require-atomic-updates': 'warn',
     'no-param-reassign': ['warn', { props: true }],
     curly: ['warn', 'multi-line'],
+    'no-console': [
+      'warn',
+      { allow: ['time', 'timeEnd', 'info', 'error', 'debug'] },
+    ],
     'padding-line-between-statements': [
       'warn',
       {
@@ -30,17 +34,6 @@ module.exports = {
       },
       { blankLine: 'always', prev: 'block-like', next: '*' },
     ],
-    '@typescript-eslint/padding-line-between-statements': [
-      'warn',
-      { blankLine: 'always', prev: '*', next: 'type' },
-      { blankLine: 'always', prev: 'type', next: '*' },
-    ],
-    '@typescript-eslint/naming-convention': [
-      'warn',
-      { selector: 'typeLike', format: ['PascalCase'] },
-    ],
-    '@typescript-eslint/sort-type-union-intersection-members': 'warn',
-    '@typescript-eslint/consistent-type-imports': 'warn',
     'sort-imports': ['warn', { ignoreDeclarationSort: true }],
     'import/order': [
       'warn',
@@ -62,16 +55,29 @@ module.exports = {
     'import/newline-after-import': 'warn',
     'import/no-duplicates': 'warn',
     'import/no-default-export': 'warn',
-    'no-console': [
+    '@typescript-eslint/padding-line-between-statements': [
       'warn',
-      { allow: ['time', 'timeEnd', 'info', 'error', 'debug'] },
+      { blankLine: 'always', prev: '*', next: 'type' },
+      { blankLine: 'always', prev: 'type', next: '*' },
     ],
+    '@typescript-eslint/naming-convention': [
+      'warn',
+      { selector: 'typeLike', format: ['PascalCase'] },
+    ],
+    '@typescript-eslint/sort-type-union-intersection-members': 'warn',
+    '@typescript-eslint/consistent-type-imports': 'warn',
   },
   overrides: [
     {
-      files: ['*.spec.ts'],
+      files: ['*.{spec,test}.{js,ts}'],
       rules: {
         'no-console': 'off',
+      },
+    },
+    {
+      files: ['*.config.{js,ts}'],
+      rules: {
+        'import/no-default-export': 'off',
       },
     },
   ],
