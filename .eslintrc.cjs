@@ -39,6 +39,7 @@ module.exports = {
       'warn',
       { selector: 'typeLike', format: ['PascalCase'] },
     ],
+    '@typescript-eslint/sort-type-union-intersection-members': 'warn',
     '@typescript-eslint/consistent-type-imports': 'warn',
     'sort-imports': ['warn', { ignoreDeclarationSort: true }],
     'import/order': [
