@@ -64,4 +64,12 @@ module.exports = {
       { allow: ['time', 'timeEnd', 'info', 'error', 'debug'] },
     ],
   },
+  overrides: [
+    {
+      files: ['*.spec.ts'],
+      rules: {
+        'no-console': 'off',
+      },
+    },
+  ],
 };
