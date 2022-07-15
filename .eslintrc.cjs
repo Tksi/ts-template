@@ -61,6 +61,7 @@ module.exports = {
     ],
     'import/newline-after-import': 'warn',
     'import/no-duplicates': 'warn',
+    'import/no-default-export': 'warn',
     'no-console': [
       'warn',
       { allow: ['time', 'timeEnd', 'info', 'error', 'debug'] },
