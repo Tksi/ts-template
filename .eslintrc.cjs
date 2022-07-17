@@ -19,6 +19,7 @@ module.exports = {
     'array-callback-return': 'warn',
     'no-return-await': 'warn',
     'require-atomic-updates': 'warn',
+    'require-await': 'warn',
     'no-param-reassign': ['warn', { props: true }],
     curly: ['warn', 'multi-line'],
     'no-console': [
