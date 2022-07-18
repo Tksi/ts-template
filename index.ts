@@ -1,3 +1,3 @@
-import { main } from 'lib/hello';
+import { hello } from 'lib/hello';
 
-main();
+hello();

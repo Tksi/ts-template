@@ -21,6 +21,7 @@
     "format": "npm run lint -- --fix; prettier --ignore-unknown --write '{,!(node_modules)/**/}*'",
     "test": "vitest --watch false",
     "test:open": "vitest --ui",
-    "type": "tsc --noEmit"
+    "type": "tsc --noEmit",
+    "unused": "npx -y ts-unused-exports tsconfig.json --ignoreFiles=.*config"
   }
 }

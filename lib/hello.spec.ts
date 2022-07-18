@@ -1,8 +1,8 @@
 import { describe, expect, test } from 'vitest';
-import { main } from './hello';
+import { hello } from './hello';
 
 describe('test', () => {
   test('hoge', () => {
-    expect(main()).toBe(true);
+    expect(hello()).toBe(true);
   });
 });
