@@ -9,6 +9,8 @@
     "eslint-plugin-import": "^2.26.0",
     "nodemon": "^2.0.16",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "tsc-alias": "^1.7.0",
     "typescript": "^4.7.4",
     "vite-node": "^0.15.2",
     "vite-tsconfig-paths": "^3.5.0",
@@ -22,6 +24,7 @@
     "test": "vitest --watch false",
     "test:open": "vitest --ui",
     "type": "tsc --noEmit",
-    "unused": "npx -y ts-unused-exports tsconfig.json --ignoreFiles=.*config"
+    "unused": "npx -y ts-unused-exports tsconfig.json --ignoreFiles=.*config",
+    "build": "rimraf dist && tsc -p tsconfig.build.json && tsc-alias -f -p tsconfig.build.json"
   }
 }
