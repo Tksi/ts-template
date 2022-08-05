@@ -70,7 +70,6 @@ module.exports = {
     ],
     '@typescript-eslint/sort-type-union-intersection-members': 'warn',
     '@typescript-eslint/consistent-type-imports': 'warn',
-    'unicorn/filename-case': 'off',
     'unicorn/prefer-top-level-await': 'off',
     'unicorn/no-await-expression-member': 'off',
     'unicorn/prevent-abbreviations': 'off',
@@ -79,6 +78,15 @@ module.exports = {
       'warn',
       {
         name: 'err',
+      },
+    ],
+    'unicorn/filename-case': [
+      'warn',
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+        },
       },
     ],
   },
