@@ -74,6 +74,7 @@ module.exports = {
     'unicorn/no-await-expression-member': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/prefer-ternary': 'off',
+    'unicorn/prefer-native-coercion-function': 'off',
     'unicorn/catch-error-name': [
       'warn',
       {
