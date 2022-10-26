@@ -34,7 +34,14 @@ module.exports = {
       {
         blankLine: 'always',
         prev: '*',
-        next: ['block-like', 'return', 'throw', 'export'],
+        next: [
+          'block-like',
+          'return',
+          'throw',
+          'export',
+          'break',
+          'continue',
+        ],
       },
       { blankLine: 'always', prev: 'block-like', next: '*' },
     ],
