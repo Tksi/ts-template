@@ -12,13 +12,13 @@
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "tsc-alias": "^1.7.0",
+    "tsx": "^3.11.0",
     "typescript": "^4.7.4",
-    "vite-node": "^0.21.0",
     "vite-tsconfig-paths": "^3.5.0",
     "vitest": "^0.21.0"
   },
   "scripts": {
-    "start": "vite-node index.ts",
+    "start": "tsx index.ts",
     "dev": "nodemon --exec \"npm run start\" -e ts",
     "lint": "eslint . --cache --cache-location node_modules/.cache/.eslintcache --ignore-pattern node_modules/",
     "format": "npm run lint -- --fix; prettier --cache --ignore-unknown --write --loglevel warn '{,!(node_modules)/**/}*'",

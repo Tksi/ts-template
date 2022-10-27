@@ -34,14 +34,7 @@ module.exports = {
       {
         blankLine: 'always',
         prev: '*',
-        next: [
-          'block-like',
-          'return',
-          'throw',
-          'export',
-          'break',
-          'continue',
-        ],
+        next: ['block-like', 'return', 'throw', 'export', 'break', 'continue'],
       },
       { blankLine: 'always', prev: 'block-like', next: '*' },
     ],
@@ -85,7 +78,6 @@ module.exports = {
     'unicorn/prefer-native-coercion-function': 'off',
     'unicorn/no-new-array': 'off',
     'unicorn/no-array-reduce': 'off',
-    'unicorn/no-new-array': 'off',
     'unicorn/catch-error-name': [
       'warn',
       {
