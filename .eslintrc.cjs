@@ -78,6 +78,7 @@ module.exports = {
     'unicorn/prefer-native-coercion-function': 'off',
     'unicorn/no-new-array': 'off',
     'unicorn/no-array-reduce': 'off',
+    'unicorn/prefer-array-index-of': 'off',
     'unicorn/catch-error-name': [
       'warn',
       {
