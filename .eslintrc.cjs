@@ -80,6 +80,7 @@ module.exports = {
     'unicorn/no-new-array': 'off',
     'unicorn/no-array-reduce': 'off',
     'unicorn/prefer-array-index-of': 'off',
+    'unicorn/prefer-dom-node-text-content': 'off',
     'unicorn/catch-error-name': [
       'warn',
       {
