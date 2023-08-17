@@ -1,12 +1,13 @@
 module.exports = {
   env: {
-    es2022: true,
+    es2024: true,
     node: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:unicorn/recommended',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -68,7 +69,7 @@ module.exports = {
       'warn',
       { selector: 'typeLike', format: ['PascalCase'] },
     ],
-    '@typescript-eslint/sort-type-union-intersection-members': 'warn',
+    '@typescript-eslint/sort-type-constituents': 'warn',
     '@typescript-eslint/consistent-type-imports': 'warn',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
