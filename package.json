@@ -23,7 +23,7 @@
     "lint": "eslint . --ext .ts --cache --cache-location node_modules/.cache/.eslintcache",
     "format": "npm run lint -- --fix; prettier . --cache --write --log-level warn",
     "format-check": "prettier --cache --ignore-unknown --check .",
-    "test": "vitest --watch false",
+    "test": "vitest run",
     "test:open": "vitest --ui",
     "type": "tsc --noEmit",
     "unused": "npx -y ts-unused-exports tsconfig.json --ignoreFiles=.*config",
