@@ -3,8 +3,10 @@
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "always"
   },
+  "files.trimTrailingWhitespace": true,
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -39,6 +41,9 @@
   },
   "[css]": {
     "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {

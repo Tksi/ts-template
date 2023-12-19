@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: ['import'],
   rules: {
+    'spaced-comment': ['warn', 'always'],
     camelcase: 'warn',
     eqeqeq: 'warn',
     'max-params': 'warn',
@@ -89,6 +90,7 @@ module.exports = {
     'unicorn/prefer-array-index-of': 'off',
     'unicorn/prefer-dom-node-text-content': 'off',
     'unicorn/prefer-includes': 'off',
+    'unicorn/prefer-string-replace-all': 'off',
     'unicorn/catch-error-name': [
       'warn',
       {
