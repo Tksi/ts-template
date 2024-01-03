@@ -77,6 +77,7 @@ module.exports = {
     ],
     '@typescript-eslint/sort-type-constituents': 'warn',
     '@typescript-eslint/consistent-type-imports': 'warn',
+    '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     'unicorn/prefer-top-level-await': 'off',
