@@ -2,6 +2,7 @@
   "recommendations": [
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
     "vivaxy.vscode-conventional-commits"
   ]
 }
