@@ -1,32 +1,36 @@
 {
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.5.0",
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.4.0",
-    "@vitest/ui": "^0.34.2",
-    "eslint": "^8.47.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.0",
-    "eslint-plugin-unicorn": "^48.0.1",
-    "nodemon": "^3.0.1",
-    "prettier": "^3.0.2",
-    "rimraf": "^5.0.1",
-    "tsc-alias": "^1.8.7",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.6",
-    "vitest": "^0.34.2"
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "@vitest/ui": "^1.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "prettier": "^3.2.4",
+    "rimraf": "^5.0.5",
+    "ts-unused-exports": "^10.0.1",
+    "tsc-alias": "^1.8.8",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
   },
   "scripts": {
     "start": "tsx src/index.ts",
-    "dev": "nodemon --exec \"npm run start\" -e ts --watch src",
+    "dev": "tsx watch src/index.ts",
     "type:check": "tsc --noEmit",
     "lint:check": "eslint . --ext .ts --cache --cache-location node_modules/.cache/.eslintcache --ignore-path .gitignore",
     "format:check": "prettier . --cache --check --ignore-path .gitignore",
-    "format": "npm run lint:check -- --fix; prettier . --cache --write --log-level warn --ignore-path .gitignore",
+    "fix": "npm run lint:check -- --fix; prettier . --cache --write --log-level warn --ignore-path .gitignore; npm run type:check",
     "test": "vitest run",
     "test:open": "vitest --ui",
-    "unused": "npx -y ts-unused-exports tsconfig.json --ignoreFiles=.*config",
+    "unused": "ts-unused-exports tsconfig.json --ignoreFiles=.*config",
     "build": "rimraf dist && tsc -p tsconfig.build.json && tsc-alias -f -p tsconfig.build.json"
+  },
+  "engines": {
+    "yarn": "use npm",
+    "pnpm": "use npm"
   }
 }
