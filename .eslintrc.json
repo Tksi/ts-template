@@ -16,6 +16,7 @@
   },
   "plugins": ["import"],
   "rules": {
+    "func-style": "error",
     "spaced-comment": ["warn", "always"],
     "camelcase": "warn",
     "eqeqeq": "warn",
