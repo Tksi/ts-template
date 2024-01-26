@@ -30,6 +30,7 @@
     "build": "rimraf dist && tsc -p tsconfig.build.json && tsc-alias -f -p tsconfig.build.json"
   },
   "engines": {
+    "npm": "*",
     "yarn": "use npm",
     "pnpm": "use npm"
   }
