@@ -4,6 +4,7 @@
     "node": true
   },
   "extends": [
+    "plugin:jsdoc/recommended",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
@@ -114,7 +115,34 @@
           "pascalCase": true
         }
       }
-    ]
+    ],
+    "jsdoc/require-jsdoc": [
+      "warn",
+      {
+        "publicOnly": true,
+        "enableFixer": false,
+        "require": {
+          "ArrowFunctionExpression": true,
+          "ClassDeclaration": true,
+          "ClassExpression": true,
+          "FunctionDeclaration": true,
+          "FunctionExpression": true
+        }
+      }
+    ],
+    "jsdoc/require-description": [
+      "warn",
+      {
+        "contexts": [
+          "ArrowFunctionExpression",
+          "ClassDeclaration",
+          "ClassExpression",
+          "FunctionDeclaration",
+          "FunctionExpression"
+        ]
+      }
+    ],
+    "jsdoc/require-returns": "off"
   },
   "overrides": [
     {

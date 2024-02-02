@@ -1,3 +1,6 @@
+/**
+ * say hello
+ */
 export const hello = () => {
   console.debug('hello');
 
