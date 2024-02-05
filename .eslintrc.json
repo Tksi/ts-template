@@ -24,7 +24,6 @@
     "guard-for-in": "error",
     "spaced-comment": ["warn", "always"],
     "camelcase": "warn",
-    "max-params": "warn",
     "max-depth": "warn",
     "array-callback-return": "warn",
     "no-return-await": "warn",
@@ -101,6 +100,7 @@
     "unicorn/prefer-dom-node-text-content": "off",
     "unicorn/prefer-includes": "off",
     "unicorn/prefer-string-replace-all": "off",
+    "unicorn/text-encoding-identifier-case": "off",
     "unicorn/catch-error-name": [
       "warn",
       {
