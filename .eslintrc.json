@@ -85,7 +85,6 @@
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
-    "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-inferrable-types": "off",
     "unicorn/prefer-top-level-await": "off",
