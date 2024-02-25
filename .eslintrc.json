@@ -142,7 +142,8 @@
         ]
       }
     ],
-    "jsdoc/require-returns": "off"
+    "jsdoc/require-returns": "off",
+    "jsdoc/require-param-type": "off"
   },
   "overrides": [
     {
