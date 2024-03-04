@@ -32,7 +32,7 @@
     "curly": ["warn", "multi-line"],
     "no-console": [
       "warn",
-      { "allow": ["time", "timeEnd", "info", "error", "debug"] }
+      { "allow": ["time", "timeEnd", "info", "warn", "error", "debug"] }
     ],
     "padding-line-between-statements": [
       "warn",
