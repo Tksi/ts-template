@@ -109,7 +109,6 @@ export default [
       'jsdoc/require-returns': 'off',
       'jsdoc/require-returns-type': 'off',
       'jsdoc/require-param-type': 'off',
-      '@typescript-eslint/no-for-in-array': 'error',
       '@typescript-eslint/strict-boolean-expressions': 'error',
       '@typescript-eslint/switch-exhaustiveness-check': 'error',
       '@typescript-eslint/naming-convention': [
