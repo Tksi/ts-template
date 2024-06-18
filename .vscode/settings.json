@@ -6,7 +6,6 @@
     "source.fixAll": "never",
     "source.fixAll.eslint": "always"
   },
-  "eslint.experimental.useFlatConfig": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
