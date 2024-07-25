@@ -114,7 +114,6 @@ export default [
         { selector: 'typeLike', format: ['PascalCase'] },
       ],
       '@typescript-eslint/consistent-type-definitions': ['warn', 'type'],
-      '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/sort-type-constituents': 'warn',
       '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-non-null-assertion': 'off',
