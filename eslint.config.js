@@ -9,7 +9,7 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export default [
+export default tseslint.config([
   gitignore(),
   {
     languageOptions: {
@@ -24,10 +24,10 @@ export default [
     },
   },
   eslint.configs.recommended,
-  eslintPluginUnicorn.configs['flat/recommended'],
+  eslintPluginUnicorn.configs['recommended'],
   jsdoc.configs['flat/recommended'],
-  ...tseslint.configs.recommendedTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
+  tseslint.configs.recommendedTypeChecked,
+  tseslint.configs.stylisticTypeChecked,
   {
     plugins: {
       '@stylistic': stylistic,
@@ -175,4 +175,4 @@ export default [
     ...tseslint.configs.disableTypeChecked,
   },
   eslintConfigPrettier,
-];
+]);
