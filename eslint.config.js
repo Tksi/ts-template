@@ -18,7 +18,7 @@ export default tseslint.config([
         ...globals.node,
       },
       parserOptions: {
-        project: true,
+        projectService: true,
         tsconfigRootDir: import.meta.dirname,
       },
     },
@@ -38,7 +38,7 @@ export default tseslint.config([
       'func-style': 'error',
       'guard-for-in': 'error',
       'no-useless-assignment': 'warn',
-      camelcase: 'warn',
+      camelcase: ['error', { properties: 'never' }],
       'max-depth': 'warn',
       'array-callback-return': 'warn',
       'no-implicit-coercion': 'warn',
