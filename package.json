@@ -12,8 +12,8 @@
     "eslint-plugin-unicorn": "^61.0.2",
     "prettier": "^3.6.2",
     "rimraf": "^6.0.1",
-    "ts-unused-exports": "^11.0.1",
     "tsc-alias": "^1.8.16",
+    "tsr": "^1.3.4",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.1",
@@ -25,11 +25,11 @@
     "format:check": "prettier . --cache --check --ignore-path .gitignore",
     "lint:check": "eslint **/*.{js,ts} --concurrency auto --cache --cache-location node_modules/.cache/.eslintcache",
     "type:check": "tsc --noEmit",
-    "checkall": "npm run format:check && npm run lint:check && npm run type:check",
-    "fix": "prettier . --cache --write --log-level warn --ignore-path .gitignore; npm run lint:check -- --fix; npm run type:check",
+    "unused": "tsr 'src/index.ts$' -p tsconfig.build.json",
+    "checkall": "npm run unused && npm run format:check && npm run lint:check && npm run type:check",
+    "fix": "npm run unused -- -w; prettier . --cache --write --log-level warn --ignore-path .gitignore; npm run lint:check -- --fix;",
     "test": "vitest run",
     "test:open": "vitest --ui",
-    "unused": "ts-unused-exports tsconfig.json --ignoreFiles=.*config",
     "build": "rimraf dist && tsc -p tsconfig.build.json && tsc-alias -f -p tsconfig.build.json"
   }
 }

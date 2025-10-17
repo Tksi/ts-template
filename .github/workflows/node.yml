@@ -18,5 +18,4 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run checkall
-      - run: npm run unused
       - run: npm run test
