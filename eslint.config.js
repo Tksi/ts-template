@@ -37,6 +37,7 @@ export default tseslint.config([
       eqeqeq: ['error', 'always', { null: 'ignore' }],
       'func-style': 'error',
       'guard-for-in': 'error',
+      'preserve-caught-error': 'warn',
       'no-useless-assignment': 'warn',
       camelcase: ['error', { properties: 'never' }],
       'max-depth': 'warn',
