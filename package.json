@@ -25,9 +25,9 @@
     "format:check": "prettier . --cache --check --ignore-path .gitignore",
     "lint:check": "eslint **/*.{js,ts} --concurrency auto --cache --cache-location node_modules/.cache/.eslintcache",
     "type:check": "tsc --noEmit",
-    "unused": "tsr 'src/index.ts$' -p tsconfig.build.json",
-    "checkall": "npm run unused && npm run format:check && npm run lint:check && npm run type:check",
-    "fix": "npm run unused -- -w; prettier . --cache --write --log-level warn --ignore-path .gitignore; npm run lint:check -- --fix;",
+    "unused:check": "tsr 'src/index.ts$' -p tsconfig.build.json",
+    "checkall": "npm run unused:check && npm run format:check && npm run lint:check && npm run type:check",
+    "fix": "prettier . --cache --write --log-level warn --ignore-path .gitignore; npm run lint:check -- --fix;",
     "test": "vitest run",
     "test:open": "vitest --ui",
     "build": "rimraf dist && tsc -p tsconfig.build.json && tsc-alias -f -p tsconfig.build.json"
