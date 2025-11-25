@@ -39,7 +39,6 @@ export default tseslint.config([
       'guard-for-in': 'error',
       camelcase: ['error', { properties: 'never' }],
       'preserve-caught-error': 'warn',
-      'no-useless-assignment': 'warn',
       'max-depth': 'warn',
       'array-callback-return': 'warn',
       'no-implicit-coercion': 'warn',
