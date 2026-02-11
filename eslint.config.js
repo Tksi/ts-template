@@ -1,6 +1,7 @@
 // @ts-check
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
+import { defineConfig } from 'eslint/config';
 import gitignore from 'eslint-config-flat-gitignore';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintImport from 'eslint-plugin-import-x';
@@ -9,8 +10,8 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config([
-  gitignore(),
+export default defineConfig([
+  gitignore({ strict: false }),
   {
     languageOptions: {
       globals: {
@@ -31,6 +32,7 @@ export default tseslint.config([
   {
     plugins: {
       '@stylistic': stylistic,
+      // @ts-expect-error ライブラリの型がおかしい
       import: eslintImport,
     },
     rules: {
