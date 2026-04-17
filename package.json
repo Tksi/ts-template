@@ -10,6 +10,8 @@
     "eslint-plugin-import-x": "^4.16.2",
     "eslint-plugin-jsdoc": "^62.9.0",
     "eslint-plugin-unicorn": "^64.0.0",
+    "globals": "^17.5.0",
+    "knip": "^6.4.1",
     "prettier": "^3.8.3",
     "rolldown": "^1.0.0-rc.16",
     "rolldown-plugin-dts": "^0.23.2",
@@ -24,7 +26,7 @@
     "format:check": "prettier . --cache --check --ignore-path .gitignore",
     "lint:check": "eslint **/*.{js,ts} --concurrency auto --cache --cache-location node_modules/.cache/.eslintcache",
     "type:check": "tsc --noEmit",
-    "checkall": "npm run format:check && npm run lint:check && npm run type:check",
-    "fix": "prettier . --cache --write --log-level warn --ignore-path .gitignore; npm run lint:check -- --fix; npm run type:check"
+    "checkall": "npm run format:check && npm run lint:check && npm run type:check && knip",
+    "fix": "prettier . --cache --write --log-level warn --ignore-path .gitignore; npm run lint:check -- --fix; npm run type:check && knip"
   }
 }
