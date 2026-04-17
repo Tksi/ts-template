@@ -32,7 +32,6 @@ export default defineConfig([
   {
     plugins: {
       '@stylistic': stylistic,
-      // @ts-expect-error ライブラリの型がおかしい
       import: eslintImport,
     },
     rules: {
