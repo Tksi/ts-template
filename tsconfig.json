@@ -2,7 +2,6 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    "baseUrl": "./src",
     // "rootDir": "./src",
     // "outDir": "./dist",
 
@@ -11,7 +10,9 @@
     "module": "nodenext",
     "target": "esnext",
     // For nodejs:
+    "lib": ["esnext"],
     "types": ["node"],
+    // and npm install -D @types/node
 
     // Other Outputs
     "sourceMap": true,
@@ -38,6 +39,9 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "skipLibCheck": true
   }
 }
