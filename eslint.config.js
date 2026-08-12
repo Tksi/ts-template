@@ -27,7 +27,7 @@ export default defineConfig([
   eslint.configs.recommended,
   eslintPluginUnicorn.configs['recommended'],
   jsdoc.configs['flat/recommended'],
-  tseslint.configs.recommendedTypeChecked,
+  tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
   {
     plugins: {
@@ -65,6 +65,7 @@ export default defineConfig([
           },
         },
       ],
+      'unicorn/name-replacements': 'off',
       'unicorn/prefer-top-level-await': 'off',
       'unicorn/no-await-expression-member': 'off',
       'unicorn/prevent-abbreviations': 'off',
